@@ -4,7 +4,6 @@
   "description": "Udacity Mobile web specialist course project",
   "main": "./src/index.js",
   "scripts": {
-    "postinstall": "yarn run build",
     "dev": "node ./config/dev",
     "build": "node ./config/prod",
     "lint": "eslint ./src"
@@ -33,5 +32,8 @@
     "webpack-cli": "3.0.8",
     "webpack-dev-server": "3.1.4",
     "webpack-merge": "4.1.3"
+  },
+  "dependencies": {
+    "idb": "^2.1.3"
   }
 }

@@ -4,6 +4,7 @@ module.exports = {
     browser: true
   },
   rules: {
-    "no-restricted-globals": ["off", "self"]
+    "no-restricted-globals": ["off", "self"],
+    "no-restricted-syntax": ["warn"]
   }
 };

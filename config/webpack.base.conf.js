@@ -1,5 +1,4 @@
-
-process.noDeprecation = true;
+const webpack = require('webpack');
 
 module.exports = {
   module: {
@@ -21,5 +20,10 @@ module.exports = {
     },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify('1.0.0'),
+    }),
+  ],
 
 };
